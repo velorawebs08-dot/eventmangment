@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-maroon: #6E0B17;
+  --color-maroon-btn: #7A0F1B;
+  --color-gold: #C9A24B;
+  --color-cream: #FBF6EE;
+  --color-warmgrey: #EFEAE2;
+  --color-textblack: #1A1A1A;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-devanagari: "Noto Serif Devanagari", "Cormorant Garamond", serif;
+}
+
+/* Hard rule: NO hover animations, transforms or color shifts */
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-textblack);
+    background-color: var(--color-cream);
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Ensure no hover state can be inadvertently applied */
+button:hover,
+a:hover {
+  filter: none !important;
+  transform: none !important;
+}
+

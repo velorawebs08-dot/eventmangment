@@ -1,0 +1,6 @@
+{
+  "name": "Shubh Utsav Events",
+  "description": "Simple, beautiful and stress-free wedding and event planning — sangeet, mehendi, birthdays and more.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
